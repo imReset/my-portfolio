@@ -1,0 +1,566 @@
+@keyframes jello-horizontal {
+  0%,
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+}
+@keyframes shadow-drop-bottom {
+  0% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+  to {
+    box-shadow: 0 12px 20px -12px rgb(0 0 0/35%);
+  }
+}
+.behancecomjohndoeLink,
+.twittercomjohndoeLink {
+  text-decoration: none;
+  position: absolute;
+  top: 88px;
+  left: 2px;
+  line-height: 44px;
+  color: #03045e;
+  display: inline-block;
+}
+.twittercomjohndoeLink {
+  top: 44px;
+  left: 0;
+}
+.johndoegmailcomP {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.johndoegmailcomLink,
+.matthiascheng50gmailcomLink {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.johndoegmailcomLink {
+  height: 100%;
+  width: 68.48%;
+  right: 31.52%;
+  bottom: 0;
+  line-height: 44px;
+  color: #03045e;
+  display: inline-block;
+}
+.matthiascheng50gmailcomLink {
+  width: 368px;
+  height: 88px;
+}
+.matthiascheng50gmailcomLink:hover {
+  mix-blend-mode: overlay;
+}
+.contactsContainer,
+.loremIpsumDolor5 {
+  position: absolute;
+  top: 351px;
+  left: 431px;
+  width: 368px;
+  height: 132px;
+}
+.loremIpsumDolor5 {
+  margin: 0;
+  top: 112px;
+  line-height: 44px;
+  display: inline-block;
+  width: 607px;
+  height: 171px;
+}
+.contactText {
+  margin: 0;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 100px;
+  line-height: 116px;
+  color: #2b3a67;
+  display: flex;
+  align-items: flex-end;
+  width: 445px;
+  height: 117px;
+}
+.contactContainer {
+  position: absolute;
+  top: 3436px;
+  left: 76px;
+  width: 1038px;
+  height: 483px;
+}
+.breifDescriptionText1 {
+  margin: 0;
+  position: absolute;
+  top: 451px;
+  left: 10px;
+  line-height: 32px;
+  display: inline-block;
+  width: 522px;
+  height: 80px;
+}
+.dateCreatedText1,
+.image2 {
+  position: absolute;
+  left: 20px;
+}
+.dateCreatedText1 {
+  top: 283px;
+  font-size: 15px;
+  line-height: 44px;
+  display: inline-block;
+  font-style: italic;
+}
+.image2 {
+  top: 0;
+  width: 471px;
+  height: 283px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.project2Container {
+  position: absolute;
+  top: 492px;
+  left: 590px;
+  width: 532px;
+  height: 531px;
+}
+.breifDescriptionText,
+.titleText {
+  margin: 0;
+  position: absolute;
+  display: inline-block;
+}
+.breifDescriptionText {
+  top: 457px;
+  left: 10px;
+  line-height: 32px;
+  width: 522px;
+  height: 80px;
+}
+.titleText {
+  font-weight: 600;
+  top: 397px;
+  left: 0;
+  font-size: 24px;
+  line-height: 44px;
+}
+.dateCreatedText,
+.image1 {
+  position: absolute;
+  left: 51px;
+}
+.dateCreatedText {
+  top: 283px;
+  font-size: 15px;
+  line-height: 44px;
+  display: inline-block;
+  font-style: italic;
+}
+.image1 {
+  top: 0;
+  width: 471px;
+  height: 283px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.project1Container {
+  position: absolute;
+  top: 492px;
+  left: 0;
+  width: 532px;
+  height: 537px;
+}
+.loremIpsumDolor4 {
+  margin: 0;
+  position: absolute;
+  top: 202px;
+  left: 74px;
+  font-size: 24px;
+  line-height: 44px;
+  display: inline-block;
+  width: 900px;
+}
+.projectsText {
+  margin: 0;
+  font-weight: 800;
+  position: absolute;
+  top: 0;
+  left: 51px;
+  font-size: 100px;
+  line-height: 116px;
+  color: #2b3a67;
+  display: flex;
+  align-items: flex-end;
+  width: 469px;
+  height: 118px;
+}
+.projectsContainer {
+  position: absolute;
+  top: 2277px;
+  left: 25px;
+  width: 1122px;
+  height: 1029px;
+  font-size: 18px;
+}
+.aboutText {
+  margin: 0;
+  font-weight: 800;
+  position: relative;
+  font-size: 100px;
+  line-height: 116px;
+  color: #2b3a67;
+  display: flex;
+  align-items: flex-end;
+  width: 348px;
+  height: 117px;
+  flex-shrink: 0;
+}
+.loremIpsumDolor2,
+.loremIpsumDolor3 {
+  position: relative;
+  line-height: 44px;
+  display: inline-block;
+  width: 900px;
+  margin: 68px 0 0;
+}
+.loremIpsumDolor2 {
+  margin: 0;
+  position: absolute;
+  top: 50px;
+  left: 31px;
+}
+.text1Container {
+  position: relative;
+  width: 931px;
+  height: 182px;
+  flex-shrink: 0;
+  margin-top: 68px;
+}
+.text {
+  position: absolute;
+  top: 0;
+  left: 31px;
+  line-height: 40px;
+  font-weight: 600;
+  display: inline-block;
+}
+.ellipseIcon1 {
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+}
+.loremIpsumDolor,
+.presentText {
+  position: absolute;
+  left: 38px;
+  display: inline-block;
+}
+.loremIpsumDolor {
+  margin: 0;
+  top: 50px;
+  line-height: 44px;
+  width: 900px;
+}
+.presentText {
+  top: 0;
+  line-height: 40px;
+  font-weight: 600;
+}
+.ellipseIcon {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  width: 13px;
+  height: 13px;
+}
+.text3Container {
+  position: relative;
+  width: 938px;
+  height: 182px;
+  flex-shrink: 0;
+  margin-top: 68px;
+}
+.aboutContainer {
+  position: absolute;
+  top: 989px;
+  left: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.aboutButton,
+.projectsButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  font-size: 18px;
+  font-family: Poppins;
+  color: #03045e;
+  text-align: left;
+  display: inline-block;
+}
+.navBarContainer {
+  position: absolute;
+  top: 37px;
+  left: 555px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.navBarContainer > * + * {
+  margin-left: 46px;
+}
+.gitHubMark32px1Button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 18px;
+  height: 17px;
+  flex-shrink: 0;
+  background-image: url(../../public/githubmark32px-1@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.gitHubMark32px1Button:hover {
+  animation: 1s ease-in 0s infinite normal none jello-horizontal;
+}
+.vectorIcon1 {
+  position: absolute;
+  height: 100%;
+  width: 99.97%;
+  top: 0;
+  right: 0.01%;
+  bottom: 0;
+  left: 0.01%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.behance21Button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 26px;
+  height: 16.1px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-left: 27px;
+}
+.behance21Button:hover,
+.twitter61Button:hover {
+  animation: 1s ease-in-out 0s infinite normal none jello-horizontal;
+}
+.vectorIcon {
+  position: absolute;
+  height: 89.51%;
+  width: 74.16%;
+  top: 10.49%;
+  right: 10.95%;
+  bottom: 0;
+  left: 14.89%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.twitter61Button {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 26px;
+  height: 17.79px;
+  flex-shrink: 0;
+  overflow: hidden;
+  margin-left: 27px;
+}
+.iconsContainer {
+  position: absolute;
+  top: 41px;
+  left: 1028px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.linesImage {
+  position: absolute;
+  top: 706px;
+  left: 114px;
+  width: 105px;
+  height: 72.71px;
+  object-fit: cover;
+}
+.basedInCanada {
+  margin: 0;
+  position: absolute;
+  top: 304px;
+  left: 0;
+  font-weight: 600;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0a2e50;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.portfolioText {
+  font-weight: 900;
+  top: 173px;
+  font-size: 85px;
+  line-height: 116px;
+  font-family: Montserrat;
+  display: flex;
+  align-items: flex-end;
+  width: 616px;
+}
+.helloImMatthias,
+.myText,
+.portfolioText {
+  margin: 0;
+  position: absolute;
+  left: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0a2e50;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.myText {
+  font-weight: 900;
+  top: 65px;
+  font-size: 85px;
+  line-height: 116px;
+  font-family: Montserrat;
+  display: flex;
+  align-items: flex-end;
+  width: 616px;
+}
+.helloImMatthias {
+  top: 16px;
+  font-weight: 600;
+  display: inline-block;
+}
+.rectangleRectangle,
+.rectangleRectangle1 {
+  position: absolute;
+  height: 89.71%;
+  width: 96.34%;
+  border-radius: 6px;
+}
+.rectangleRectangle1 {
+  top: 10.29%;
+  right: 0;
+  bottom: 0;
+  left: 3.66%;
+  background-color: #fff;
+}
+.rectangleRectangle {
+  top: 0;
+  right: 3.66%;
+  bottom: 10.29%;
+  left: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+.resumeText {
+  position: absolute;
+  height: 44.12%;
+  width: 49.39%;
+  top: 23.53%;
+  right: 27.44%;
+  bottom: 32.35%;
+  left: 23.17%;
+  font-size: 20px;
+  font-family: Poppins;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #0a2e50;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  display: inline-block;
+}
+.groupButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: absolute;
+  top: 361px;
+  left: 0;
+  width: 164px;
+  height: 68px;
+}
+.groupButton:hover {
+  animation: 1s ease-out 0s infinite normal none shadow-drop-bottom;
+}
+.mainTextContainer,
+.matthiasText {
+  position: absolute;
+  top: 213px;
+  left: 392px;
+  width: 616px;
+  height: 429px;
+  font-size: 28px;
+}
+.matthiasText {
+  top: 32px;
+  left: 80px;
+  font-size: 26px;
+  font-family: Montserrat;
+  font-weight: 600;
+  display: inline-block;
+  width: 228px;
+  height: 45px;
+  mix-blend-mode: multiply;
+}
+.homeContainer {
+  position: relative;
+  background-color: #9de0eb;
+  width: 100%;
+  height: 4000px;
+  overflow: hidden;
+  text-align: left;
+  font-size: 24px;
+  color: #03045e;
+  font-family: Poppins;
+}
+@media screen and (max-width: 428px) {
+  .aboutButton {
+    font-size: 21px;
+    display: flex;
+    width: 10px;
+  }
+  .groupButton {
+    width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .matthiasText {
+    mix-blend-mode: multiply;
+    width: 50%;
+    height: 100%;
+  }
+}
