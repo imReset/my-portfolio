@@ -17,7 +17,7 @@ export default function Home() {
       >
         <div className="content">
           <div className="title">
-            <h1>Digital Crafters</h1>
+            <h1>My Portfolio </h1>
           </div>
           <div className="subTitle">
             <p>
@@ -36,12 +36,8 @@ export default function Home() {
       >
         <div className="grid">
           <div className="col">
-            <strong>Agency</strong>
-            <p>Digital Crafters</p>
-          </div>
-          <div className="col">
-            <strong>Email</strong>
-            <p>kishansheth21@gmail.com</p>
+            <strong>Email:</strong>
+            <p>matthiascheng50@gmail.com</p>
           </div>
           <div className="col">
             <strong>Mobile</strong>

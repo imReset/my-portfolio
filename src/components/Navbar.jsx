@@ -21,9 +21,7 @@ export default function Navbar() {
       animate={controls}
     >
       <div className="brand__container">
-        <a href="#" className="brand">
-          <img src={logo} alt="Logo" />
-        </a>
+        <a href="#" className="brand"></a>
         <div className="toggle">
           {isNavOpen ? (
             <MdClose onClick={() => setIsNavOpen(false)} />
@@ -40,22 +38,22 @@ export default function Navbar() {
       <div className={`links ${isNavOpen ? "show" : ""}`}>
         <ul>
           <li className="active">
-            <a href="#home">Home</a>
+            <a href="#home">home</a>
           </li>
           <li>
-            <a href="#services">Services</a>
+            <a href="#services">services</a>
           </li>
           <li>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">portfolio</a>
           </li>
           <li>
-            <a href="#blog">Blog</a>
+            <a href="#blog">blog</a>
           </li>
           <li>
-            <a href="#skills">Skills</a>
+            <a href="#skills">skills</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">contact</a>
           </li>
         </ul>
       </div>
