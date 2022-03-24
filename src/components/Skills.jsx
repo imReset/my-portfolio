@@ -1,226 +1,63 @@
-import React from "react";
-import styled from "styled-components";
-import Title from "./Title";
-import skills1 from "assets/skills1.png";
-import skills2 from "assets/skills2.png";
-import { skillsBarAnimations } from "animations";
-import { motion } from "framer-motion";
-import { useScroll } from "./useScroll";
-function Skills() {
-  const [element, controls] = useScroll();
-  const skillsData = [
-    {
-      name: "creativity",
-      amount: 75,
-    },
-    {
-      name: "coding",
-      amount: 50,
-    },
-    {
-      name: "react",
-      amount: 90,
-    },
-    {
-      name: "marketing",
-      amount: 70,
-    },
-    {
-      name: "design",
-      amount: 30,
-    },
-  ];
+import React from 'react';
+
+import HTML from '../assets/html.png';
+import CSS from '../assets/css.png';
+import JavaScript from '../assets/javascript.png';
+import ReactImg from '../assets/react.png';
+import Node from '../assets/node.png';
+import FireBase from '../assets/firebase.png';
+import AWS from '../assets/aws.png';
+import GitHub from '../assets/github.png';
+import Tailwind from '../assets/tailwind.png';
+import Mongo from '../assets/mongo.png';
+
+const Skills = () => {
   return (
-    <Section id="skills" ref={element}>
-      <Title value="skills" />
-      <div className="background">
-        <img src={skills1} alt="skills design" className="design1" />
-        <img src={skills2} alt="skills design" className="design2" />
+    <div name='skills' className='w-full h-screen bg-[#0a192f] text-gray-300'>
+      {/* Container */}
+      <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+          <div>
+              <p className='text-4xl font-bold inline border-b-4 border-pink-600 '>Skills</p>
+              <p className='py-4'>// These are the technologies I've worked with</p>
+          </div>
+
+          <div className='w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8'>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={HTML} alt="HTML icon" />
+                  <p className='my-4'>HTML</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={CSS} alt="HTML icon" />
+                  <p className='my-4'>CSS</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={JavaScript} alt="HTML icon" />
+                  <p className='my-4'>JAVASCRIPT</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={ReactImg} alt="HTML icon" />
+                  <p className='my-4'>REACT</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={GitHub} alt="HTML icon" />
+                  <p className='my-4'>GITHUB</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Node} alt="HTML icon" />
+                  <p className='my-4'>NODE JS</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={Mongo} alt="HTML icon" />
+                  <p className='my-4'>MONGO DB</p>
+              </div>
+              <div className='shadow-md shadow-[#040c16] hover:scale-110 duration-500'>
+                  <img className='w-20 mx-auto' src={AWS} alt="HTML icon" />
+                  <p className='my-4'>AWS</p>
+              </div>
+          </div>
       </div>
-      <div className="skills__title">
-        <p>Our Skills</p>
-        <h2>Check our super awesome skills</h2>
-      </div>
-      <div className="skills">
-        <div className="skills__bars">
-          {skillsData.map(({ name, amount }) => {
-            return (
-              <motion.div
-                className="skills__bars__bar"
-                key={name}
-                variants={skillsBarAnimations}
-                animate={controls}
-                transition={{
-                  delay: 0.03,
-                  type: "tween",
-                  duration: 0.8,
-                }}
-                whileInView={{ opacity: 1, y: 0 }}
-              >
-                <div className="container">
-                  <progress value={amount} max="100" />
-                  <span>{name}</span>
-                </div>
-                <h3>{amount}%</h3>
-              </motion.div>
-            );
-          })}
-        </div>
-        <div className="skills__content">
-          <p className="title">
-            Lorem ipsum dolor, sit amet consectetur impedit?
-          </p>
-          <p className="description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius
-            cupiditate incidunt distinctio velit quos dolore, ut, tempore
-            suscipit impedit reiciendis voluptas, illo expedita! Necessitatibus!
-          </p>
-        </div>
-      </div>
-    </Section>
+    </div>
   );
-}
-
-const Section = styled.section`
-  min-height: 100vh;
-  height: 140vh;
-  background-color: var(--secondary-color);
-  .background {
-    position: relative;
-    .design1 {
-      position: absolute;
-      right: 0;
-      z-index: 1;
-    }
-    .design2 {
-      position: absolute;
-      left: 0;
-      z-index: 1;
-      top: 20rem;
-    }
-  }
-  .sideTitle {
-    h1 {
-      color: white;
-      font-size: 9rem;
-      z-index: 2;
-    }
-  }
-  .skills__title {
-    padding: 6rem 10rem;
-    p {
-      text-transform: uppercase;
-      letter-spacing: 0.2rem;
-      color: var(--primary-color);
-    }
-    h2 {
-      color: white;
-      font-size: 2rem;
-    }
-  }
-  .skills {
-    display: flex;
-    padding: 0 20rem;
-    gap: 10rem;
-    &__bars {
-      transform: rotate(-90deg);
-      width: max-content;
-      height: max-content;
-      display: flex;
-      flex-direction: column;
-      gap: 4rem;
-      &__bar {
-        display: flex;
-        flex-direction: row-reverse;
-
-        gap: 1rem;
-
-        .container {
-          display: flex;
-          flex-direction: column;
-          gap: 2.5rem;
-          span {
-            text-transform: uppercase;
-            letter-spacing: 0.2rem;
-            color: var(--primary-color);
-          }
-          progress {
-            width: 30rem;
-            -webkit-appearance: none;
-            appearance: none;
-            &::-webkit-progress-bar {
-              height: 3rem;
-              background-color: white;
-            }
-            &::-webkit-progress-value {
-              background-color: var(--primary-color);
-            }
-          }
-        }
-        h3 {
-          transform: rotate(90deg);
-          color: white;
-          font-size: 2rem;
-        }
-      }
-    }
-    &__content {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      color: white;
-      z-index: 2;
-      .title {
-        font-weight: bolder;
-        letter-spacing: 0.1rem;
-      }
-    }
-  }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    overflow-x: hidden;
-    padding: 2rem 0;
-    .background {
-      display: none;
-    }
-    .skills__title {
-      padding: 2rem;
-      text-align: center;
-      h2 {
-        font-size: 1.5rem;
-      }
-    }
-    .skills {
-      padding: 0;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 1rem;
-      &__bars {
-        padding: 0.2rem;
-        gap: 0rem;
-        align-items: center;
-        justify-content: center;
-        &__bar {
-          .container {
-            gap: 1rem;
-            progress {
-              width: 12rem;
-              height: 0.5rem;
-              &::-webkit-progress-bar {
-                height: 0.3rem;
-              }
-            }
-          }
-          h3 {
-            font-size: 1rem;
-          }
-        }
-      }
-      &__content {
-        padding: 0 2rem;
-      }
-    }
-  }
-`;
+};
 
 export default Skills;

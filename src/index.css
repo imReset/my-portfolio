@@ -1,42 +1,30 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --primary-color: #662d91;
-  --secondary-color: #ed6991;
-  --font-family: "Poppins", sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+    body {
+        @apply font-[Raleway];
+    }
+    li {
+        @apply px-4;
+        @apply cursor-pointer
+    }
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
 }
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-  overflow-x: hidden;
-}
-@media screen and (min-width: 280px) and (max-width: 1080px) {
-  body::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-body,
-button {
-  font-family: var(--font-family);
-}
-
-body {
-  overflow-x: hidden;
-}
-
-::-webkit-scrollbar {
-  background-color: var(--primary-color);
-  width: 0.3rem;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: var(--secondary-color);
+.content-div:hover {
+    background-image: linear-gradient(
+        to right,
+        rgba(112, 157, 255, 0.8),
+        hsla(242, 74%, 61%, 0.8)   
+    )!important;
 }

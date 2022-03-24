@@ -1,138 +1,139 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import logo from "assets/logo.png";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { MdClose } from "react-icons/md";
-import { motion } from "framer-motion";
-import { navAnimation } from "animations";
-import { useScroll } from "./useScroll";
+import React, { useState } from 'react';
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaFacebook,
+  FaLinkedinIn,
+} from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import { BsFillPersonLinesFill } from 'react-icons/bs';
+import Logo from '../assets/logo.png';
+import { Link } from 'react-scroll';
 
-export default function Navbar() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
-  const [element, controls] = useScroll();
-  const html = document.querySelector("html");
-  html.addEventListener("click", (e) => setIsNavOpen(false));
+const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const handleClick = () => setNav(!nav);
+
   return (
-    <Nav
-      state={isNavOpen ? 1 : 0}
-      variants={navAnimation}
-      transition={{ delay: 0.1 }}
-      ref={element}
-      animate={controls}
-    >
-      <div className="brand__container">
-        <a href="#" className="brand"></a>
-        <div className="toggle">
-          {isNavOpen ? (
-            <MdClose onClick={() => setIsNavOpen(false)} />
-          ) : (
-            <GiHamburgerMenu
-              onClick={(e) => {
-                e.stopPropagation();
-                setIsNavOpen(true);
-              }}
-            />
-          )}
-        </div>
+    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+      <div>
+        <img src={Logo} alt='Logo Image' style={{ width: '50px' }} />
       </div>
-      <div className={`links ${isNavOpen ? "show" : ""}`}>
+
+      {/* menu */}
+      <ul className='hidden md:flex'>
+        <li>
+          <Link to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li>
+          <Link to='about' smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li>
+          <Link to='skills' smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link to='work' smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li>
+          <Link to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+
+      {/* Hamburger */}
+      <div onClick={handleClick} className='md:hidden z-10'>
+        {!nav ? <FaBars /> : <FaTimes />}
+      </div>
+
+      {/* Mobile menu */}
+      <ul
+        className={
+          !nav
+            ? 'hidden'
+            : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'
+        }
+      >
+        <li className='py-6 text-4xl'>
+          <Link onClick={handleClick} to='home' smooth={true} duration={500}>
+            Home
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='about' smooth={true} duration={500}>
+            About
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='skills' smooth={true} duration={500}>
+            Skills
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='work' smooth={true} duration={500}>
+            Work
+          </Link>
+        </li>
+        <li className='py-6 text-4xl'>
+          {' '}
+          <Link onClick={handleClick} to='contact' smooth={true} duration={500}>
+            Contact
+          </Link>
+        </li>
+      </ul>
+
+      {/* Social icons */}
+      <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
         <ul>
-          <li className="active">
-            <a href="#home">home</a>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='/'
+            >
+              Linkedin <FaLinkedin size={30} />
+            </a>
           </li>
-          <li>
-            <a href="#services">services</a>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333333]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='/'
+            >
+              Github <FaGithub size={30} />
+            </a>
           </li>
-          <li>
-            <a href="#portfolio">portfolio</a>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='/'
+            >
+              Email <HiOutlineMail size={30} />
+            </a>
           </li>
-          <li>
-            <a href="#blog">blog</a>
-          </li>
-          <li>
-            <a href="#skills">skills</a>
-          </li>
-          <li>
-            <a href="#contact">contact</a>
+          <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
+            <a
+              className='flex justify-between items-center w-full text-gray-300'
+              href='/'
+            >
+              Resume <BsFillPersonLinesFill size={30} />
+            </a>
           </li>
         </ul>
       </div>
-    </Nav>
+    </div>
   );
-}
+};
 
-const Nav = styled(motion.nav)`
-  display: flex;
-  justify-content: space-between;
-  margin: 0 12rem;
-  padding-top: 2rem;
-  color: white;
-  .brand__container {
-    margin: 0 2rem;
-    .brand {
-    }
-    .toggle {
-      display: none;
-    }
-  }
-  .links {
-    ul {
-      .active {
-        a {
-          border-bottom: 0.2rem solid var(--secondary-color);
-        }
-      }
-      list-style: none;
-      display: flex;
-      gap: 3rem;
-      li {
-        a {
-          color: white;
-          text-decoration: none;
-          font-weight: bold;
-          font-size: 1.1rem;
-        }
-      }
-    }
-  }
-  @media screen and (min-width: 280px) and (max-width: 1080px) {
-    margin: 0;
-    position: relative;
-    .brand__container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-      .brand {
-      }
-      .toggle {
-        padding-right: 1rem;
-        display: block;
-        z-index: 1;
-      }
-    }
-    .show {
-      opacity: 1 !important;
-      visibility: visible !important;
-    }
-
-    .links {
-      position: absolute;
-      overflow-x: hidden;
-      top: 0;
-      right: 0;
-      width: ${({ state }) => (state ? "60%" : "0%")};
-      height: 100vh;
-      background-color: var(--secondary-color);
-      opacity: 0;
-      visibility: hidden;
-      transition: 0.4s ease-in-out;
-      ul {
-        flex-direction: column;
-        text-align: center;
-        height: 100%;
-        justify-content: center;
-      }
-    }
-  }
-`;
+export default Navbar;
