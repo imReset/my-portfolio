@@ -9,10 +9,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className=" w-full h-[80px] flex justify-between items-center px-4 bg-[#9de0eb] text-[#03045E]">
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#9de0eb] text-[#03045E]">
       {/* menu */}
-      <ul className="hidden md:flex">
-        <li></li>
+      <ul className="md:flex text-xl color-green text-center">
         <li>
           <Link to="about" smooth={true} duration={500}>
             about
@@ -48,14 +47,9 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#9de0eb] flex flex-col justify-center items-center"
+            : "transition-all absolute top-0 left-0 w-full h-screen bg-[#9de0eb] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">
-          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
-            home
-          </Link>
-        </li>
         <li className="py-6 text-4xl">
           {" "}
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
@@ -71,7 +65,7 @@ const Navbar = () => {
         <li className="py-6 text-4xl">
           {" "}
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
-            work
+            projects
           </Link>
         </li>
         <li className="py-6 text-4xl">
