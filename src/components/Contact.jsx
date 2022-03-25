@@ -8,12 +8,12 @@ const Contact = () => {
     >
       <form
         method="POST"
-        action="https://getform.io/f/a699a1b2-f225-434e-b317-1fbbde8e006c"
+        action="https://getform.io/f/064545c0-9be4-4065-9dc7-bdd45288f9b9"
         className="flex flex-col max-w-[600px] w-full"
       >
         <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300">
-            Contact
+          <p className="text-8xl font-black inline text-[#dddddd] content-center">
+            contact.
           </p>
           <p className="text-gray-300 py-4">
             Submit the form below or shoot me an email -
@@ -21,22 +21,25 @@ const Contact = () => {
           </p>
         </div>
         <input
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 rounded-md"
           type="text"
           placeholder="Name"
           name="name"
+          required
         />
         <input
-          className="my-4 p-2 bg-[#ccd6f6]"
+          className="my-4 p-2 bg-[#ccd6f6] rounded-md"
           type="email"
           placeholder="Email"
           name="email"
+          required
         />
         <textarea
-          className="bg-[#ccd6f6] p-2"
+          className="bg-[#ccd6f6] p-2 rounded-md"
           name="message"
           rows="10"
           placeholder="Message"
+          required
         ></textarea>
         <button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
