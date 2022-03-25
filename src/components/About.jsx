@@ -11,10 +11,10 @@ const About = () => {
         </div>
         <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
           <div className="sm:text-left text-4xl font-bold text-[#03045E]">
-            <h1 class="w-full text-3xl font-semibold sm:text-center pl-15 pb-10">
-              Hi Clint, make some noise, Please take a look around
+            <h1 class="w-full text-3xl font-semibold sm:text-center pl-15 pb-14">
+              Hi, my name is Matthias and I am based in Canada.
             </h1>
-            <p class="w-full text-xl font-semibold block sm:text-left pl-9 pb-10 content-center">
+            <p class="w-full text-xl font-semibold block sm:text-left pl-4 pb-10 content-center">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
               corrupti delectus inventore officia sequi id cumque deleniti
               provident. Vel ipsum illo doloribus hic labore culpa dolorum,
