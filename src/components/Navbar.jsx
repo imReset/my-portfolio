@@ -84,6 +84,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://github.com/imreset"
               target="_blank"
+              rel="noreferrer"
             >
               Github <FaGithub size={30} />
             </a>
@@ -101,6 +102,7 @@ const Navbar = () => {
               className="flex justify-between items-center w-full text-gray-300"
               href="https://bit.ly/37I2Xli"
               target="_blank"
+              rel="noreferrer"
             >
               Resume <BsFillPersonLinesFill size={30} />
             </a>
