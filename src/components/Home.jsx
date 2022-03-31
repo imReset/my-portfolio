@@ -60,7 +60,10 @@ const Home = () => {
             }}
             className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:text-black hover:bg-white hover:scale-110"
           >
-            <a href="https://bit.ly/37I2Xli" target="_blank">
+            <a
+              href="https://docs.google.com/document/d/1puLCBGDdU-lb6k7RB4hiQ2fPQCmQTy-G96K9tKQ_nkc/edit?usp=sharing"
+              target="_blank"
+            >
               Resume
             </a>
             <span className="group-hover:rotate-180 duration-300">
