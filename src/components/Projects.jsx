@@ -1,5 +1,6 @@
 import React from "react";
 import WorkImg from "../assets/workImg.jpeg";
+import realEstate from "../assets/realestate.jpg";
 
 const Projects = () => {
   return (
@@ -54,7 +55,7 @@ const Projects = () => {
           <div className="grid sm:grid-cols md:grid-cols gap-4">
             {/* Grid Item */}
             <div
-              style={{ backgroundImage: `url(${WorkImg})` }}
+              style={{ backgroundImage: `url(${realEstate})` }}
               className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div"
             >
               {/* Hover Effects */}
@@ -63,12 +64,18 @@ const Projects = () => {
                   React JS Application
                 </span>
                 <div className="pt-8 text-center">
-                  <a href="/">
+                  <a
+                    href="https://tesla-clone-gamma-orcin.vercel.app/"
+                    target="_blank"
+                  >
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Demo
                     </button>
                   </a>
-                  <a href="/">
+                  <a
+                    href="https://github.com/imReset/tesla-clone"
+                    target="_blank"
+                  >
                     <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                       Code
                     </button>
