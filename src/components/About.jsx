@@ -15,10 +15,9 @@ const About = () => {
               Hi, my name is Matthias and I am based in Canada.
             </h1>
             <p class="w-full text-xl font-semibold block sm:text-left pl-4 pb-10 content-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-              corrupti delectus inventore officia sequi id cumque deleniti
-              provident. Vel ipsum illo doloribus hic labore culpa dolorum,
-              perspiciatis nulla quisquam atque.
+              I am a highschool student passionate about technology. My
+              accomplishments to date include building a computer and designing,
+              developing, and launching multiple websites.
             </p>
           </div>
         </div>
