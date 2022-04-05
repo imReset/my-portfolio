@@ -61,7 +61,7 @@ const Projects = () => {
               {/* Hover Effects */}
               <div className="transition duration-500 opacity-0 group-hover:opacity-100">
                 <span className="transition duration-500 text-2xl font-bold text-white tracking-wider">
-                  React JS Application
+                  Tesla Website Clone
                 </span>
                 <div className="pt-8 text-center">
                   <a
